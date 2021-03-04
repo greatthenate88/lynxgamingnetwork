@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import ExpandNav from './ExpandNav';
-import lynx1 from '../images/lynx1.svg';
+import lynx from './images/lynx.png';
 
 const Nav = styled.nav`
   width:100%;
@@ -31,7 +31,7 @@ const LynxNav = () => {
       <Nav>
         <div className="logo">
           <LynxLogo href='/dashboard'>
-          <img src={lynx1} alt="temp lynx logo" height='69px' width='69px'/>
+          <img src={lynx} alt="temp lynx logo" height='69px' width='69px'/>
           </LynxLogo>
         </div>
         <ExpandNav/>
