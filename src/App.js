@@ -28,9 +28,6 @@ function App() {
 	  });
 
   return (
-    themeLoaded && 
-	<ThemeProvider theme={ selectedTheme }>
-		<GlobalStyles/>
 		<div className="App">
     	  <AuthProvider>
 			<Router>
@@ -47,7 +44,6 @@ function App() {
 			</Router>
 		  </AuthProvider>
     	</div>
-	</ThemeProvider>
   );
 }
 

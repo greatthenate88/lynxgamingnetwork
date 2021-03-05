@@ -7,16 +7,13 @@ import { getFromLS } from '../utils/storage';
 const ThemedButton = styled.button`
     border: 0;
     display: inline-block;
-    padding: 6px 12px;
     font-size: 14px;
     border-radius: 4px;
-    margin-top: 5px;
-    width: 100%;
+    width: 75%;
     cursor: pointer;
 `;
 
 const Wrapper = styled.li`
-    padding: 10px;
     text-align: center;
     border-radius: 4px;
     border: 1px solid #000;
@@ -25,10 +22,9 @@ const Wrapper = styled.li`
 
 const Container = styled.ul`
     display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(4, 1fr);
+    gap: .1rem;
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 3rem;
-    padding: 10px;
 `;
 
 
@@ -70,7 +66,7 @@ export default (props) => {
                     style={{backgroundColor: `${data[_.camelCase(props.theme.name)].colors.button.background}`, 
                     color: `${data[_.camelCase(props.theme.name)].colors.button.text}`,
                     fontFamily: `${data[_.camelCase(props.theme.name)].font}`}}>
-                    {props.theme.name}
+                    
                 </ThemedButton>
             </Wrapper>
         )
