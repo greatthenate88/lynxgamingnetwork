@@ -1,43 +1,73 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import ExpandNav from './ExpandNav';
+import React, { useState, useEffect } from 'react';
 import lynx from './images/lynx.png';
+import NavList from './NavList';
+import ThemeSelector from '../theme/ThemeSelector';
+import styled, { ThemeProvider } from "styled-components";
+import WebFont from 'webfontloader';
+import { GlobalStyles } from '../theme/GlobalStyles';
+import {useTheme} from '../theme/useTheme';
 
 const Nav = styled.nav`
   width:100%;
-  height: 4rem;
-  border-bottom: 2px solid #f1f1f1;
+  height: 10rem;
+  border-bottom:inset .1vh  #b6dbd4;
+  box-shadow:inset 0 -1rem 1rem -1.5rem #03c6a3;
   padding: 0 25px;
   display: flex;
-  background-image: linear-gradient(45deg, whitesmoke, #6bc7da);
   font-weight:bold;
   color:#006bbf;
   justify-content: space-between;
   .logo {
     padding: 10px 0;
     transition:transform .25s;
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left:7rem;
 }
-.logo:hover{
-  transform: scale(1.2);
+  .logo:hover{
+  transform: scale(1.3);
 }
+  .NL{
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-right:14%;
+  }
 `;
+
 const LynxLogo = styled.a`
 
 `;
 
 const LynxNav = () => {
-    //const [theme, setTheme] = useState(true);
-    return (
+  const {theme, themeLoaded, getFonts} = useTheme();
+  const [selectedTheme, setSelectedTheme] = useState(theme);
+
+  useEffect(() => {
+    setSelectedTheme(theme);
+   }, [themeLoaded]);
+
+  useEffect(() => {
+    WebFont.load({
+      google: {
+        families: getFonts()
+      }
+    });
+  });  
+  return (
+    <ThemeProvider theme={ selectedTheme }>
+		  <GlobalStyles/>  
       <Nav>
         <div className="logo">
-          <LynxLogo href='/dashboard'>
-          <img src={lynx} alt="temp lynx logo" height='69px' width='69px'/>
+          <LynxLogo href='/'>
+          <img className="lynx" src={lynx} alt="temp lynx logo" height='80px' width='80px'/>
           </LynxLogo>
         </div>
-        <ExpandNav/>
-
+        <ThemeSelector setter={setSelectedTheme} />
+        <NavList></NavList>
       </Nav>
-    )
+    </ThemeProvider>
+  );
 }
+
   
   export default LynxNav

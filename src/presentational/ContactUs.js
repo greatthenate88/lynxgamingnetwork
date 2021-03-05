@@ -10,7 +10,7 @@ const DropdownContainer = styled.div`
     padding-right:130px;
     padding-top:15px;
     &:hover {
-        color:darkslategray;
+        color:#002151;
     }
 a{
     padding:5px;
@@ -35,11 +35,11 @@ a{
 }
 a:hover{
     transform:scale(1.2);
-    color:darkslategray;
+    color:#002151;
 }
 .dropdown:hover .dropdown-content {
   display: inline-flex;
-  color:darkslategray;
+  color:#002151;
 }
 `;
 

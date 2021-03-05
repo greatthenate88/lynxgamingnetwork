@@ -10,7 +10,11 @@ const routes = [
 		component: Home,
 		isPrivate: false,
 	},
-
+	{
+		path: '/',
+		component: Home,
+		isPrivate: true,
+	},
 ];
 
 export default routes;

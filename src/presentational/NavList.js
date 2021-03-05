@@ -7,11 +7,12 @@ const UL = styled.ul`
   display: flex;
   flex-flow: row nowrap;
   z-index:20;
+  position:relative;
   a {
-    padding: 15px 10px;
+    padding: 1.5rem 0rem 0px 10rem;
     color:black;
     &:hover {
-        color:darkslategray;
+        color:#002151;
     }
   }
   @media (max-width: 768px) {
@@ -19,7 +20,7 @@ const UL = styled.ul`
     background-color:#6bc7da;
     opacity:.9;
     position: fixed;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+
     top: 0;
     right: 0;
     height: 100vh;
@@ -37,9 +38,8 @@ const UL = styled.ul`
 const NavList = ({ open }) => {
 
 return (
-  <div>
+  <div className="NL">
     <UL open={open}>
-      <a href="/">About Us</a>
       <a href="/">Articles</a>
       <a href="/">Streamers</a>
       <a href="/">Live Schedule</a>

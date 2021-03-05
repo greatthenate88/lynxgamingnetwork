@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SC = styled.div`
-    width:24rem;
+    width:100%;
     border-style:dashed;
     border-width:1px;
     border-radius:2px;
@@ -28,10 +28,9 @@ export const StreamerCard = (props) => {
     return(
         <SC>
             <div className="UN">
+                <img  alt='asdf'></img>
             </div>
-        <br/>
-            <div className="rating">
-            </div>
+            <footer>asfd</footer>
         </SC>
     );
 }

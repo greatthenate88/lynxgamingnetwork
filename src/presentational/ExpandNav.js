@@ -8,7 +8,7 @@ const Expand = styled.div`
   height: 2rem;
   position:absolute;
   top: 15px;
-  right:1rem;
+  right:10rem;
   z-index: 21;
   display: none;
   @media (max-width: 768px) {

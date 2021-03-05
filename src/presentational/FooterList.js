@@ -18,7 +18,7 @@ const RandoListPart = styled.a`
     padding-right:130px;
     padding-top:15px;
     &:hover {
-        color:darkslategray;
+        color:#002151;
     }
 `;
 

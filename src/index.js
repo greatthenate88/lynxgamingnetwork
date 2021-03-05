@@ -3,11 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import * as themes from './theme/schema.json';
+import { setToLS } from './utils/storage.js';
+
+const Index = () => {
+  setToLS('all-themes', themes.default);
+  return(
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+  )
+}
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Index/>,
   document.getElementById('root')
 );
 

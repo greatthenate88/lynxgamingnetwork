@@ -21,11 +21,6 @@ export default function Home(props) {
       <br/>
       <br/>
       <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
     <Footer></Footer>
 </>
   );

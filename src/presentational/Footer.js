@@ -6,13 +6,11 @@ import FooterList from './FooterList';
 
 const CustomFooter = styled.footer`
   width: 100%;
-  height: 100%;
+  height: 10rem;
   padding:0px;
-  border-top: 2px solid #f1f1f1;
-  padding: 0 25px;
-  position:fixed;
+  border-top:inset .1vh  #b6dbd4;
+  box-shadow:inset 0 1rem 1rem -1.5rem #03c6a3;
   display: flex;
-  background-image: linear-gradient(235deg, whitesmoke, #6bc7da);
   font-weight:bold;
   color:#006bbf;
   justify-content:center;
