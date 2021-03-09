@@ -2,7 +2,7 @@ import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faFacebook, faTwitter, faTwitch, faYoutube, faDiscord, faInstagram} from '@fortawesome/free-brands-svg-icons'
-import { GlobalStyles } from '../theme/GlobalStyles';
+
 
 
 
@@ -11,9 +11,7 @@ const DropdownContainer = styled.div`
     padding-left: 130px;
     padding-right:130px;
     padding-top:15px;
-    &:hover {
-        color:#002151;
-    }
+
 a{
     padding:5px;
     z-index:10;

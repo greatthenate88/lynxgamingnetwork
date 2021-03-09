@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import thumbnail from './images/thumbnail.jpg';
+import artthumbnail from './images/artthumbnail.jpg';
 
-const SC = styled.a`
+const AC = styled.a`
     width:100%;
     border-radius:2px;
     padding: .1rem;
@@ -25,6 +25,7 @@ const SC = styled.a`
   img{
     width:100%;
     border:1px solid #0075b5;
+    border-bottom:none;
   }
 
   footer{
@@ -32,6 +33,7 @@ const SC = styled.a`
     border-style:solid;
     border-color:#0075b5;
     border-top:none;
+    text-align:center;
   }
   .title{
     text-align:left;
@@ -46,20 +48,20 @@ const SC = styled.a`
   }
 `;
 
-export const StreamerCard = (props) => {
+export const ArticleCard = (props) => {
     return(
-        <SC>
+        <AC>
           <div className="not-a-wrapper">
             <div className="UN">
-                <a href="https://www.youtube.com/" target="_blank" ><img alt='asdf' src={thumbnail}></img></a>
+                <a href="/articles"><img alt='asdf' src={artthumbnail}></img></a>
             </div>
             <footer className="SCF">
-              <div className="title" >Popping OFF! Kikkoman Soysauce does it again</div> 
-              <div className="creator" >3/9 | by Kai K</div>
+                <div className="title" >Top 5 Starting 16s: Building for Treasures</div>
+                <div className="creator" > 3/4 | by C & N</div>
             </footer>
           </div>
-        </SC>
+        </AC>
     );
 }
 
-export default StreamerCard
+export default ArticleCard

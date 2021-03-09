@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { GlobalStyles } from '../theme/GlobalStyles';
 
 
 const UL = styled.ul`
@@ -10,10 +11,6 @@ const UL = styled.ul`
   position:relative;
   a {
     padding: 1.5rem 0rem 0px 10rem;
-    color:black;
-    &:hover {
-        color:#002151;
-    }
   }
   @media (max-width: 768px) {
     flex-flow: column nowrap;
@@ -38,7 +35,8 @@ const UL = styled.ul`
 const NavList = ({ open }) => {
 
 return (
-  <div className="NL">
+  
+  <div className="NL"><GlobalStyles/>
     <UL open={open}>
       <a href="/articles">Articles</a>
       <a href="/">Streamers</a>

@@ -12,7 +12,20 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.colors.link.text};
     cursor: pointer;
   }
-
+  a:hover{
+    color: ${({ theme }) => theme.colors.link.hover};
+    transform:scale(1.05);
+  }
+  .SCF{
+    background-color: ${({theme}) => theme.colors.foot.bc};
+  }
+  p{
+    color: ${({ theme }) => theme.colors.link.text};
+  }
+  p:hover{
+    color: ${({ theme }) => theme.colors.link.hover};
+    transform:scale(1.05);
+  }
   button {
     all:initial;
     border: 0;
