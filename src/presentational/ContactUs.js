@@ -1,7 +1,9 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faFacebook, faTwitter, faTwitch, faYoutube, faDiscord, faInstagram} from '@fortawesome/free-brands-svg-icons'
+import { GlobalStyles } from '../theme/GlobalStyles';
+
 
 
 const DropdownContainer = styled.div`
@@ -46,9 +48,9 @@ a:hover{
 
 
 export const ContactUs = (props) => {
-    return (
-    <div>
-        <DropdownContainer>
+    
+return (
+    <DropdownContainer>
     <div className="dropdown">
         <p>Contact Us</p>
         <div className="dropdown-content">
@@ -60,8 +62,7 @@ export const ContactUs = (props) => {
             <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon size="2x" icon={faInstagram}/></a>
         </div>
     </div>
-        </DropdownContainer>
-    </div>
+    </DropdownContainer>
     );
-    }
+}
 export default ContactUs;

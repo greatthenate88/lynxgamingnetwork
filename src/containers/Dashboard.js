@@ -2,7 +2,7 @@ import React from 'react';
 import {Row, Col, Container, Card, Carousel} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import YouTube from 'react-youtube';
-import StreamArray from './StreamArray';
+import StreamTable from './StreamTable.js';
 
 
 
@@ -29,7 +29,7 @@ export const Dashboard = (props) => {
                 />
             </Col>
             <Col>
-                <StreamArray></StreamArray>
+                <StreamTable></StreamTable>
             </Col>
             </Row>
 

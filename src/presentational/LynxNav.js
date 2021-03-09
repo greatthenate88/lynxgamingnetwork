@@ -59,7 +59,7 @@ const LynxNav = () => {
       <Nav>
         <div className="logo">
           <LynxLogo href='/'>
-          <img className="lynx" src={lynx} alt="temp lynx logo" height='80px' width='80px'/>
+          <img className="lynx" src={lynx} alt="temp lynx logo" height='103px' width='103px'/>
           </LynxLogo>
         </div>
         <ThemeSelector setter={setSelectedTheme} />

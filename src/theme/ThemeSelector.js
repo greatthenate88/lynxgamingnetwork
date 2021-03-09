@@ -5,11 +5,12 @@ import {useTheme} from './useTheme';
 import { getFromLS } from '../utils/storage';
 
 const ThemedButton = styled.button`
+    all:initial;
     border: 0;
     display: inline-block;
     font-size: 14px;
     border-radius: 4px;
-    width: 75%;
+    width: 100%;
     cursor: pointer;
 `;
 
@@ -66,7 +67,7 @@ export default (props) => {
                     style={{backgroundColor: `${data[_.camelCase(props.theme.name)].colors.button.background}`, 
                     color: `${data[_.camelCase(props.theme.name)].colors.button.text}`,
                     fontFamily: `${data[_.camelCase(props.theme.name)].font}`}}>
-                    
+                    {props.theme.name}
                 </ThemedButton>
             </Wrapper>
         )

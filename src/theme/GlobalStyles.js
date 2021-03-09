@@ -5,7 +5,7 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.colors.body};
     color: ${({ theme }) => theme.colors.text};
     font-family: ${({ theme }) => theme.font};
-    transition: all 0.50s linear;
+    transition: all .1s linear;
   }
 
   a {
@@ -14,9 +14,9 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   button {
+    all:initial;
     border: 0;
     display: inline-block;
-    padding: 12px 24px;
     font-size: 14px;
     border-radius: 4px;
     margin-top: 5px;
@@ -30,4 +30,5 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.colors.button.background};
     color: ${({ theme }) => theme.colors.button.text};
   }
+
 `;

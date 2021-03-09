@@ -14,7 +14,7 @@ const Wrapping = styled.div`
     }
 `;
 
-export const StreamArray = (props) => {
+export const StreamTable = (props) => {
     return (
       <Wrapping>
         <Container>
@@ -32,4 +32,4 @@ export const StreamArray = (props) => {
       </Wrapping>
     );
 }
-export default StreamArray
+export default StreamTable

@@ -40,7 +40,7 @@ const NavList = ({ open }) => {
 return (
   <div className="NL">
     <UL open={open}>
-      <a href="/">Articles</a>
+      <a href="/articles">Articles</a>
       <a href="/">Streamers</a>
       <a href="/">Live Schedule</a>
       <a href="/">Join Us!</a>     

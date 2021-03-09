@@ -8,7 +8,7 @@ const CustomFooter = styled.footer`
   width: 100%;
   height: 10rem;
   padding:0px;
-  border-top:inset .1vh  #b6dbd4;
+  border-top:outset .1vh  #b6dbd4;
   box-shadow:inset 0 1rem 1rem -1.5rem #03c6a3;
   display: flex;
   font-weight:bold;
