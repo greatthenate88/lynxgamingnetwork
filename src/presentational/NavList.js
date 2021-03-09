@@ -43,7 +43,7 @@ return (
       <a href="/articles">Articles</a>
       <a href="/">Streamers</a>
       <a href="/">Live Schedule</a>
-      <a href="/">Join Us!</a>     
+      <a href="/SignIn">Join Us!</a>    
     </UL>
   </div>
 );
