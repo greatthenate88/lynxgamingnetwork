@@ -9,6 +9,7 @@ const UL = styled.ul`
   flex-flow: row nowrap;
   z-index:20;
   position:relative;
+  font-size:1.1rem;
   a {
     padding: 1.5rem 0rem 0px 10rem;
   }

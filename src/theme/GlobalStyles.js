@@ -21,6 +21,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   p{
     color: ${({ theme }) => theme.colors.link.text};
+    font-size:1.1rem;
   }
   p:hover{
     color: ${({ theme }) => theme.colors.link.hover};
