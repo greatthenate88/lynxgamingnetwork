@@ -3,19 +3,25 @@ import styled from "styled-components";
 import _ from 'lodash';
 import {useTheme} from './useTheme';
 import { getFromLS } from '../utils/storage';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAdjust, faClone, faPaw } from "@fortawesome/free-solid-svg-icons";
 
 const ThemedButton = styled.button`
     all:initial;
     border: 0;
     display: inline-block;
+    justify-content:center;
+    text-align:center;
     font-size: 14px;
     border-radius: 4px;
-    width: 100%;
+    width: 75%;
     cursor: pointer;
+    padding:.3rem;
 `;
 
 const Wrapper = styled.li`
     text-align: center;
+    padding:.3rem;
     border-radius: 4px;
     border: 1px solid #000;
     list-style: none;
@@ -23,9 +29,9 @@ const Wrapper = styled.li`
 
 const Container = styled.ul`
     display: grid;
-    gap: .1rem;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 3rem;
+    gap: .2rem;
+    grid-template-columns: repeat(20, 1fr);
+    margin-top: 4rem;
 `;
 
 
@@ -67,7 +73,7 @@ export default (props) => {
                     style={{backgroundColor: `${data[_.camelCase(props.theme.name)].colors.button.background}`, 
                     color: `${data[_.camelCase(props.theme.name)].colors.button.text}`,
                     fontFamily: `${data[_.camelCase(props.theme.name)].font}`}}>
-                    {props.theme.name}
+                    <FontAwesomeIcon icon={faClone} />
                 </ThemedButton>
             </Wrapper>
         )

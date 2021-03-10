@@ -61,7 +61,7 @@ return (
                 <FontAwesomeIcon onClick={() => revealPass()} icon={faEye}/>
             </div>
                 <br/>
-            <button className='FormButton1'><a href="/profile" className="SI">Sign In!</a></button>
+            <button className='FormButton1'><a href="/" className="SI">Sign In!</a></button>
         </SignInThing>
   );
 }

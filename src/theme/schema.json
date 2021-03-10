@@ -19,7 +19,7 @@
             "bc":"white"
           },
           "formbox":{
-            "bg":"#c9d3d1"
+            "bg":"#fbfffe"
           }
         },
         "font": "Ubuntu"
@@ -28,22 +28,22 @@
         "id": "T_007",
         "name": "Dark",
         "colors": {
-          "body": "#000b21",
+          "body": "#000a1e",
           "text": "#03c6a3",
           "button": {
             "text": "#03c6a3",
             "background": "#0d47a1"
           },
           "link": {
-            "text": "#00cc9f",
+            "text": "#03c6a3",
             "opacity": 0.8,
-            "hover":"teal"
+            "hover":"#00cc9f"
           },
           "foot":{
             "bc":"black"
           },
           "formbox":{
-            "bg":"#edf4f3"
+            "bg":"#eff2f1"
           }
         },
         "font": "Ubuntu"

@@ -27,6 +27,7 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.colors.link.hover};
     transform:scale(1.05);
   }
+  
   button {
     all:initial;
     border: 0;
@@ -59,7 +60,7 @@ export const GlobalStyles = createGlobalStyle`
       color: ${({ theme }) => theme.colors.button.text};
   }
   .FormBox1 {
-        background-color:${({ theme }) => theme.colors.formbox.bg};
+        background-color:${({theme}) => theme.colors.formbox.bg};
         margin:1px 25px;
         border-radius:5px;
         border-style:solid;

@@ -6,12 +6,12 @@ import NavList from './NavList';
 const Expand = styled.div`
   width: 2rem;
   height: 2rem;
-  position:absolute;
-  top: 15px;
-  right:10rem;
+  position:fixed;
+  top: 4rem;
+  right:3.3rem;
   z-index: 21;
   display: none;
-  @media (max-width: 768px) {
+  @media (max-width: 1300px) {
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
@@ -19,7 +19,7 @@ const Expand = styled.div`
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }) => open ? '#ccc' : '#333'};
+    background-color: ${({ open, theme }) => open ? theme.colors.link.hover : theme.colors.link.text};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;

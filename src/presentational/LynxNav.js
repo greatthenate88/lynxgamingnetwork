@@ -6,6 +6,7 @@ import styled, { ThemeProvider } from "styled-components";
 import WebFont from 'webfontloader';
 import { GlobalStyles } from '../theme/GlobalStyles';
 import {useTheme} from '../theme/useTheme';
+import ExpandNav from './ExpandNav';
 
 const Nav = styled.nav`
   width:100%;
@@ -15,7 +16,6 @@ const Nav = styled.nav`
   padding: 0 25px;
   display: flex;
   font-weight:bold;
-  color:#006bbf;
   justify-content: space-between;
   .logo {
     padding: 10px 0;
@@ -23,6 +23,7 @@ const Nav = styled.nav`
     margin-top:auto;
     margin-bottom:auto;
     margin-left:7rem;
+    
 }
   .logo:hover{
   transform: scale(1.3);
@@ -64,7 +65,7 @@ const LynxNav = () => {
           </LynxLogo>
         </div>
         <ThemeSelector setter={setSelectedTheme} />
-        <NavList></NavList>
+        <ExpandNav/>
       </Nav>
     </ThemeProvider>
   );
