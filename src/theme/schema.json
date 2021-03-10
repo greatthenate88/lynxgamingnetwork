@@ -11,12 +11,15 @@
             "background": "#000000"
           },
           "link": {
-            "text": "#002151",
+            "text":"#242d3a",
             "opacity": 1,
-            "hover":"#242d3a"
+            "hover":"#002151"
           },
           "foot":{
             "bc":"white"
+          },
+          "formbox":{
+            "bg":"#c9d3d1"
           }
         },
         "font": "Ubuntu"
@@ -38,6 +41,9 @@
           },
           "foot":{
             "bc":"black"
+          },
+          "formbox":{
+            "bg":"#edf4f3"
           }
         },
         "font": "Ubuntu"

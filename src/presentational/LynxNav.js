@@ -27,10 +27,11 @@ const Nav = styled.nav`
   .logo:hover{
   transform: scale(1.3);
 }
+
   .NL{
     margin-top:auto;
     margin-bottom:auto;
-    margin-right:14%;
+    margin-right:15%;
   }
 `;
 

@@ -13,7 +13,7 @@ const UL = styled.ul`
   a {
     padding: 1.5rem 0rem 0px 10rem;
   }
-  @media (max-width: 768px) {
+  /*@media (max-width: 768px) {
     flex-flow: column nowrap;
     background-color:#6bc7da;
     opacity:.9;
@@ -29,7 +29,7 @@ const UL = styled.ul`
     li {
       color: #fff;
     }
-  }
+  }*/
 `;
 
 
