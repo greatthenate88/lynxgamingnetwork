@@ -32,7 +32,7 @@ const Nav = styled.nav`
   .NL{
     margin-top:auto;
     margin-bottom:auto;
-    margin-right:15%;
+    margin-right:13%;
   }
 `;
 

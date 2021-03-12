@@ -15,17 +15,18 @@ const UL = styled.ul`
   }
   @media (max-width: 1300px) {
     flex-flow: column nowrap;
-    background-color:${({theme}) => theme.colors.formbox.bg};
+    background-color: ${({theme}) => theme.colors.formbox.bg};
+    display: ${({open}) => open ? 'flex' : 'none'};
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
-    opacity:1;
-    position: fixed;
+    opacity:.9;
+    position:absolute;
     top: 0;
     right: 0;
-    height: 100vh;
+    height: 550px;
     width: 175px;
     padding-top:4rem;
     padding-right:1rem;
-    transition: transform 0.3s ease-in-out;  
+    transition: transform .5s ease-in-out;
     a{
       padding-top:5rem;
       padding-left:.1rem;

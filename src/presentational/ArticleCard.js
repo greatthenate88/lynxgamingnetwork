@@ -45,6 +45,7 @@ const AC = styled.a`
   }
   .not-a-wrapper:hover{
     transform:scale(1.05);
+    transition: transform .2s ease-in-out;
   }
 `;
 

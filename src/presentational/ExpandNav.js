@@ -6,9 +6,9 @@ import NavList from './NavList';
 const Expand = styled.div`
   width: 2rem;
   height: 2rem;
-  position:fixed;
-  top: 4rem;
-  right:3.3rem;
+  position:absolute;
+  top:4rem;
+  right:3.4rem;
   z-index: 21;
   display: none;
   @media (max-width: 1300px) {

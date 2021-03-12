@@ -27,7 +27,7 @@ const SC = styled.a`
     border:1px solid #0075b5;
   }
 
-  footer{
+  .SCF{
     border-width:1px;
     border-style:solid;
     border-color:#0075b5;
@@ -43,6 +43,7 @@ const SC = styled.a`
   }
   .not-a-wrapper:hover{
     transform:scale(1.05);
+    transition: transform .2s ease-in-out;
   }
 `;
 
