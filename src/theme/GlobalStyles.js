@@ -23,11 +23,30 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.colors.link.text};
     font-size:1.1rem;
   }
+  .in-art-img{
+    float:inline-start;
+  }
+  .active-article{
+    border-right:1px solid lightgrey;
+  }
   .article-body{
-    text-align:left;
+    text-align:justify;
+    padding-right:15%;
+    padding-left:15%;
   }
   .about-author{
     width:25%;
+    margin-left:10rem;
+  }
+  .tri-img-band{
+    margin-bottom:1rem;
+    width:100%;
+    margin-left:25%;
+    margin-right:50%;
+    @media (max-width: 2000px) {
+    margin-left:auto;
+    margin-right:auto;
+    }
   }
   .AH{
     margin-left:3rem;
