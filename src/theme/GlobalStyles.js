@@ -23,11 +23,16 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.colors.link.text};
     font-size:1.1rem;
   }
-  p:hover{
-    color: ${({ theme }) => theme.colors.link.hover};
-    transform:scale(1.05);
+  .article-body{
+    text-align:left;
   }
-  
+  .about-author{
+    width:25%;
+  }
+  .AH{
+    margin-left:3rem;
+    margin-right:-3rem;
+  }
   button {
     all:initial;
     border: 0;
@@ -49,7 +54,7 @@ export const GlobalStyles = createGlobalStyle`
       justify-content:center;
       text-align:center;
       border-radius:5px;
-      border-color:lightgrey;
+      border-color:${({theme}) => theme.colors.formbox.border};
       border-width:1px;
       border-style:solid;
       box-shadow:1px 1px 5px #efffff;
@@ -62,6 +67,7 @@ export const GlobalStyles = createGlobalStyle`
   .FormBox1 {
         background-color:${({theme}) => theme.colors.formbox.bg};
         margin:1px 25px;
+        border-color:${({theme}) => theme.colors.formbox.border};
         border-radius:5px;
         border-style:solid;
         border-width:1px;

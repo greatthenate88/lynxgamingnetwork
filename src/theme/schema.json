@@ -19,7 +19,8 @@
             "bc":"white"
           },
           "formbox":{
-            "bg":"#fbfffe"
+            "bg":"#fbfffe",
+            "border":"#cecece"
           }
         },
         "font": "Ubuntu"
@@ -43,7 +44,8 @@
             "bc":"black"
           },
           "formbox":{
-            "bg":"#eff2f1"
+            "bg":"#eff2f1",
+            "border":"#b3dbd4"
           }
         },
         "font": "Ubuntu"
