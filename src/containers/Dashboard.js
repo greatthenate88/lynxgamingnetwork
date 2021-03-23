@@ -3,6 +3,7 @@ import {Row, Col, Container, Card, Carousel} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import YouTube from 'react-youtube';
 import StreamTable from './StreamTable.js';
+import { TwitchEmbed, TwitchChat, TwitchClip, TwitchPlayer } from 'react-twitch-embed';
 
 
 
@@ -22,10 +23,14 @@ export const Dashboard = (props) => {
         <Container fluid={true}>
             <Row>
             <Col md="auto">
-                <YouTube
-                    videoId="Nvxwf1jxdaM"
-                    opts={opts}
-                    className="main-stream"
+                <TwitchEmbed
+                    channel="lynxgamingnetwork"
+                    id="lynxgamingnetwork"
+                    theme="dark"
+                    muted
+                    height="658px"
+                    width="1080px"
+                    onVideoPause={() => console.log(':(')}
                 />
             </Col>
             <Col>

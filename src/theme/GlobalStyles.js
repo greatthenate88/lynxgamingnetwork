@@ -106,6 +106,9 @@ export const GlobalStyles = createGlobalStyle`
         border-radius:2px;
         color:#ff3f51;
     }
+    #lynxgamingnetwork {
+        margin-left: 6vh;
+}
     .reveal{
         all:initial;
         background-color:transparent;

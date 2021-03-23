@@ -43,7 +43,7 @@ return (
             <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon size="2x" icon={faFacebook} /></a>
             <a href="https://twitter.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon size="2x" icon={faTwitter}/></a>
             <a href="https://discord.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon size="2x" icon={faDiscord}/></a>
-            <a href="https://www.twitch.tv/" target="_blank" rel="noreferrer"><FontAwesomeIcon size="2x" icon={faTwitch}/></a>
+            <a href="https://www.twitch.tv/lynxgamingnetwork/" target="_blank" rel="noreferrer"><FontAwesomeIcon size="2x" icon={faTwitch}/></a>
             <a href="https://www.youtube.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon size="2x" icon={faYoutube}/></a>
             <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon size="2x" icon={faInstagram}/></a>
         </div>

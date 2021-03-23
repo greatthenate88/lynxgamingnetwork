@@ -44,7 +44,7 @@ return (
     <UL open={open}>
       <a href="/articles">Articles</a>
       <a href="/">Streamers</a>
-      <a href="/">Live Schedule</a>
+      <a href="/schedule">Live Schedule</a>
       <a href="/SignIn">Join Us!</a>    
     </UL>
   </div>
