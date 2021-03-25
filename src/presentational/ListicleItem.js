@@ -1,14 +1,13 @@
 import React from 'react';
-import ArticleBanner from './ArticleBanner';
 
 
 
 export const ListicleItem = (props) => {
     return(
     <div>
-        <h3>    
+        <h3> X. List Item Topic
         </h3>
-        <p></p>
+        <p>blurb</p>
         <br/>
         <br/>
         <br/>

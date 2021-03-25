@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import lynx from './images/lynx.png';
-import NavList from './NavList';
 import ThemeSelector from '../theme/ThemeSelector';
 import styled, { ThemeProvider } from "styled-components";
 import WebFont from 'webfontloader';

@@ -11,6 +11,7 @@ export const ArticleHub = (props) => {
         <br/>
         <Row>
             <Col xs sm md lg xl="9">
+                
                 <ActiveArticle/>
                 <div className="comment-section">
 

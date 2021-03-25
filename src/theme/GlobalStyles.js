@@ -1,5 +1,6 @@
 import { createGlobalStyle} from "styled-components";
 
+
 export const GlobalStyles = createGlobalStyle`
   body {
     background: ${({ theme }) => theme.colors.body};
@@ -23,11 +24,16 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.colors.link.text};
     font-size:1.1rem;
   }
+  h4{
+    padding-top:.8rem;
+  }
   .in-art-img{
     float:inline-start;
   }
   .active-article{
     border-right:1px solid lightgrey;
+    width:75%;
+    margin:auto;
   }
   .article-body{
     text-align:justify;
@@ -38,15 +44,25 @@ export const GlobalStyles = createGlobalStyle`
     width:25%;
     margin-left:10rem;
   }
-  .tri-img-band{
+  .article-banner{
     margin-bottom:1rem;
     width:100%;
-    margin-left:25%;
-    margin-right:50%;
-    @media (max-width: 2000px) {
     margin-left:auto;
-    margin-right:auto;
-    }
+    align-content:center;
+  }
+  .article-sidebar{
+    padding:10px;
+    position:relative;
+    right:10vh;
+  }
+  .author-img{
+    border-radius:50%;
+    height:3rem;
+    margin-right:1rem;
+  }
+  .author-blurb{
+    text-align:center;
+    margin:auto;
   }
   .AH{
     margin-left:3rem;
