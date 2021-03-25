@@ -86,10 +86,6 @@ export const GlobalStyles = createGlobalStyle`
     text-align:left;
     margin:auto;
   }
-  .AH{
-    margin-left:3rem;
-    margin-right:-3rem;
-  }
   button {
     all:initial;
     border: 0;

@@ -21,8 +21,7 @@ const Nav = styled.nav`
     transition:transform .25s;
     margin-top:auto;
     margin-bottom:auto;
-    margin-left:7rem;
-    
+    margin-left:7rem;    
 }
   .logo:hover{
   transform: scale(1.3);
