@@ -9,6 +9,7 @@ import ListicleItem from './ListicleItem';
 
 export const ActiveArticle = (props) => {
     return(
+    <>
     <div className="active-article">
         <ArticleHeader/>
          <div className="article-body">
@@ -28,7 +29,10 @@ export const ActiveArticle = (props) => {
         </div>
         <br/>
         <AboutAuthor/>
+        <br/>
     </div>
+    <br/>
+    </>
     );
 }
 export default ActiveArticle;

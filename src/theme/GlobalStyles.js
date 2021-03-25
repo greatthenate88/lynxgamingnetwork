@@ -2,12 +2,6 @@ import { createGlobalStyle} from "styled-components";
 
 
 export const GlobalStyles = createGlobalStyle`
-  body {
-    background: ${({ theme }) => theme.colors.body};
-    color: ${({ theme }) => theme.colors.text};
-    font-family: ${({ theme }) => theme.font};
-    transition: all .1s linear;
-  }
 
   a {
     color: ${({ theme }) => theme.colors.link.text};
@@ -17,18 +11,18 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.colors.link.hover};
     transform:scale(1.05);
   }
-  .SCF{
-    background-color: ${({theme}) => theme.colors.foot.bc};
-  }
-  p{
-    color: ${({ theme }) => theme.colors.link.text};
-    font-size:1.1rem;
+  body {
+    background: ${({ theme }) => theme.colors.body};
+    color: ${({ theme }) => theme.colors.text};
+    font-family: ${({ theme }) => theme.font};
+    transition: all .1s linear;
   }
   h4{
     padding-top:.8rem;
   }
-  .in-art-img{
-    float:inline-start;
+  p{
+    color: ${({ theme }) => theme.colors.link.text};
+    font-size:1.1rem;
   }
   .active-article{
     border-right:1px solid lightgrey;
@@ -41,8 +35,13 @@ export const GlobalStyles = createGlobalStyle`
     padding-left:15%;
   }
   .about-author{
-    width:25%;
-    margin-left:10rem;
+    width:50%;
+    text-align:left;
+    line-height: 1.6;
+    color: #3a3a3a;
+    box-sizing: inherit;
+    vertical-align: baseline;
+    margin-left:15%;
   }
   .article-banner{
     margin-bottom:1rem;
@@ -55,13 +54,36 @@ export const GlobalStyles = createGlobalStyle`
     position:relative;
     right:10vh;
   }
+  .author-img-container{
+    line-height: 1.6;
+    color: #3a3a3a;
+    vertical-align: middle;
+    float: left;
+    clear: right;
+    text-align: center;
+    margin:auto;
+  }
   .author-img{
     border-radius:50%;
-    height:3rem;
+    height:4rem;
     margin-right:1rem;
   }
+  .author-info-container{
+    line-height: 1.6;
+    color: #3a3a3a;
+    vertical-align: baseline;
+    width: 100%;
+    display: flex;
+  }
+  .author-info{
+    line-height: 1.6;
+    color: #3a3a3a;
+    box-sizing: inherit;
+    vertical-align: baseline;
+    text-align: left;
+  }
   .author-blurb{
-    text-align:center;
+    text-align:left;
     margin:auto;
   }
   .AH{
@@ -122,6 +144,9 @@ export const GlobalStyles = createGlobalStyle`
         border-radius:2px;
         color:#ff3f51;
     }
+  .in-art-img{
+    float:inline-start;
+  }
     #lynxgamingnetwork {
         margin-left: 6vh;
 }
@@ -136,4 +161,7 @@ export const GlobalStyles = createGlobalStyle`
     .reveal:hover{
         opacity:1;
     }
+  .SCF{
+    background-color: ${({theme}) => theme.colors.foot.bc};
+  }
 `;
