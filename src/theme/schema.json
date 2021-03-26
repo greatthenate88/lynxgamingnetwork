@@ -18,6 +18,13 @@
           "foot":{
             "bc":"white"
           },
+          "modal":{
+            "bordercolor":"#cecece",
+            "button":{
+              "background":"#001e17",
+              "text":"#f9fffd"
+            }
+          },
           "formbox":{
             "bg":"#fbfffe",
             "border":"#cecece"
@@ -42,6 +49,13 @@
           },
           "foot":{
             "bc":"black"
+          },
+          "modal":{
+            "bordercolor":"#b3dbd4",
+            "button":{
+              "background":"#f9fffd",
+              "text":"#001e17"
+            }
           },
           "formbox":{
             "bg":"#eff2f1",

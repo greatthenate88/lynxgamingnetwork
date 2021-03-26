@@ -16,6 +16,7 @@ const Nav = styled.nav`
   display: flex;
   font-weight:bold;
   justify-content: space-between;
+
   .logo {
     padding: 10px 0;
     transition:transform .25s;

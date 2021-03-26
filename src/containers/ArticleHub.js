@@ -10,7 +10,7 @@ export const ArticleHub = (props) => {
     <Container bsPrefix='AH'>
         <br/>
         <Row>
-            <Col xs sm md lg xl="9">
+            <Col xs sm md lg xl="8">
                 
                 <ActiveArticle/>
                 <div className="comment-section">

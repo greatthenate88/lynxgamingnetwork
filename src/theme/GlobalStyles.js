@@ -1,6 +1,5 @@
 import { createGlobalStyle} from "styled-components";
 
-
 export const GlobalStyles = createGlobalStyle`
 
   a {
@@ -27,7 +26,8 @@ export const GlobalStyles = createGlobalStyle`
   .active-article{
     border-right:1px solid lightgrey;
     width:100%;
-    margin:auto;
+    margin-top:auto;
+    padding-left:8rem;
   }
   .article-body{
     text-align:justify;
@@ -52,7 +52,7 @@ export const GlobalStyles = createGlobalStyle`
   .article-sidebar{
     padding:10px;
     position:relative;
-    right:10vh;
+
   }
   .article-skeleton{
     text-align:left;
@@ -118,47 +118,82 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.colors.button.text};
   }
   .FormButton1{
-      justify-content:center;
-      text-align:center;
-      border-radius:5px;
-      border-color:${({theme}) => theme.colors.formbox.border};
-      border-width:1px;
-      border-style:solid;
-      box-shadow:1px 1px 5px #efffff;
-      font-size:20px;
-      background-color:#feffff;
-      margin-top:15px;
-      padding:.2rem;
-      color: ${({ theme }) => theme.colors.button.text};
+    justify-content:center;
+    text-align:center;
+    border-radius:5px;
+    border-color:${({theme}) => theme.colors.formbox.border};
+    border-width:1px;
+    border-style:solid;
+    box-shadow:1px 1px 5px #efffff;
+    font-size:20px;
+    background-color:#feffff;
+    margin-top:15px;
+    padding:.2rem;
+    color: ${({ theme }) => theme.colors.button.text};
   }
   .FormBox1 {
-        background-color:${({theme}) => theme.colors.formbox.bg};
-        margin:1px 25px;
-        border-color:${({theme}) => theme.colors.formbox.border};
-        border-radius:5px;
-        border-style:solid;
-        border-width:1px;
-        height:3rem;
-        width:75%;
+    background-color:${({theme}) => theme.colors.formbox.bg};
+    margin:1px 25px;
+    border-color:${({theme}) => theme.colors.formbox.border};
+    border-radius:5px;
+    border-style:solid;
+    border-width:1px;
+    height:3rem;
+    width:75%;
     }
-    .FormBox1:focus{
-        border-color:#b6dbd4;
-        border-width:1px;
-        border-radius:5px;
-        box-shadow:inset 0px 0px 2px #03c6a3;
-        outline:none;
+  .FormBox1:focus{
+    border-color:#b6dbd4;
+    border-width:1px;
+    border-radius:5px;
+    box-shadow:inset 0px 0px 2px #03c6a3;
+    outline:none;
     }
-    .FormBox1:invalid{
-        border-color:#ff3f51;
-        border-width:1px;
-        border-radius:2px;
-        color:#ff3f51;
+  .FormBox1:invalid{
+    border-color:#ff3f51;
+    border-width:1px;
+    border-radius:2px;
+    color:#ff3f51;
     }
   .in-art-img{
     float:inline-start;
   }
-    #lynxgamingnetwork {
-        margin-left: 6vh;
+  #lynxgamingnetwork {
+    margin-left: 6vh;
+  }
+.modal-btn{
+  padding:.2rem;
+  margin:.2rem;
+  color:${({theme}) => theme.colors.button.text};
+  background-color:${({theme}) => theme.colors.button.background};
+}
+.modal-input-container{
+  position:absolute;
+  display:inline-block;
+  width:97%;
+  justify-content:space-around;
+}
+.modal-input{
+  width:100%;
+  min-height:50px;
+  max-height:650px;
+  padding: 12px 20px;
+  background-color: #fcfffd;
+  resize: vertical;
+}
+.mymodal{
+  background-color:${({theme}) => theme.colors.modal.button.background};
+  color:${({theme}) => theme.colors.modal.button.text};
+  position:sticky;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height:60%;
+  width:50%;
+  border-style:solid;
+  border-width:1px;
+  border-radius: 6px;
+  border-color:${({theme}) => theme.colors.modal.bordercolor};
+  padding: 20px;
 }
     .reveal{
         all:initial;
@@ -171,6 +206,19 @@ export const GlobalStyles = createGlobalStyle`
     .reveal:hover{
         opacity:1;
     }
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+  z-index:21;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
   .SCF{
     background-color: ${({theme}) => theme.colors.foot.bc};
   }

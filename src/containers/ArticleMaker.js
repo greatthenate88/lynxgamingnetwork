@@ -1,9 +1,7 @@
+import { faWindowClose } from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, {useState} from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
-import ActiveArticle from '../presentational/ActiveArticle';
-import ArticleCard from '../presentational/ArticleCard';
-import StreamerCard from '../presentational/StreamerCard';
-
 import Modal from "react-modal";
 
 
@@ -21,24 +19,29 @@ export const ArticleMaker = (props) => {
       }
     return (
       <div className="App">
-        <button onClick={toggleModal}>Open modal</button>
-        <button onClick={toggleModal2}>Open modal</button>
+        <button className="modal-btn" onClick={toggleModal}>Open modal</button>
+        <button className="modal-btn" onClick={toggleModal2}>Open modal 2</button>
         <Modal
           isOpen={isOpen}
           onRequestClose={toggleModal}
           contentLabel="My dialog"
-          
+          className="mymodal"
         >
-          <div>My modal dialog.</div>
-          <button onClick={toggleModal}>Close modal</button>
+          <button className="modal-btn" onClick={toggleModal}><FontAwesomeIcon size="2x" icon={faWindowClose}/></button>
+          <div>Edit Element</div>
+          <div className="modal-input-container">
+            <textarea className="modal-input" type="text"></textarea>
+            <button className="modal-btn">Submit Changes</button>
+          </div>
         </Modal>
         <Modal
           isOpen={isOpen2}
           onRequestClose={toggleModal2}
           contentLabel="My dialog"
+          className="mymodal"
         >
           <div>My modal dialog.2222222</div>
-          <button onClick={toggleModal2}>Close modal</button>
+          <button className="modal-btn" onClick={toggleModal2}>Close</button>
         </Modal>
     
 
