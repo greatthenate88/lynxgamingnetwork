@@ -194,6 +194,7 @@ export const GlobalStyles = createGlobalStyle`
   border-color:${({theme}) => theme.colors.modal.bordercolor};
   padding: 20px;
   box-shadow:0 0 .1rem #03c6a3;
+  overflow:scroll;
 }
     .reveal{
         all:initial;
