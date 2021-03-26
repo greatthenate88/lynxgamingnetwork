@@ -20,10 +20,8 @@
           },
           "modal":{
             "bordercolor":"#cecece",
-            "button":{
-              "background":"#001e17",
-              "text":"#f9fffd"
-            }
+            "btnbg":"#001e17",
+            "btntext":"#f9fffd"
           },
           "formbox":{
             "bg":"#fbfffe",
@@ -52,10 +50,9 @@
           },
           "modal":{
             "bordercolor":"#b3dbd4",
-            "button":{
-              "background":"#f9fffd",
-              "text":"#001e17"
-            }
+            "btnbg":"#f9fffd",
+            "btntext":"#001e17"
+            
           },
           "formbox":{
             "bg":"#eff2f1",

@@ -163,8 +163,8 @@ export const GlobalStyles = createGlobalStyle`
 .modal-btn{
   padding:.2rem;
   margin:.2rem;
-  color:${({theme}) => theme.colors.button.text};
-  background-color:${({theme}) => theme.colors.button.background};
+  color:${({theme}) => theme.colors.modal.btntext};
+  background-color:${({theme}) => theme.colors.modal.btnbg};
 }
 .modal-input-container{
   position:absolute;
@@ -174,15 +174,14 @@ export const GlobalStyles = createGlobalStyle`
 }
 .modal-input{
   width:100%;
-  min-height:50px;
   max-height:650px;
   padding: 12px 20px;
   background-color: #fcfffd;
   resize: vertical;
 }
 .mymodal{
-  background-color:${({theme}) => theme.colors.modal.button.background};
-  color:${({theme}) => theme.colors.modal.button.text};
+  background-color:${({theme}) => theme.colors.body};
+  color:${({theme}) => theme.colors.text};
   position:sticky;
   top: 50%;
   left: 50%;
@@ -194,6 +193,7 @@ export const GlobalStyles = createGlobalStyle`
   border-radius: 6px;
   border-color:${({theme}) => theme.colors.modal.bordercolor};
   padding: 20px;
+  box-shadow:0 0 .1rem #03c6a3;
 }
     .reveal{
         all:initial;
