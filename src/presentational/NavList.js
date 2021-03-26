@@ -43,6 +43,7 @@ return (
   <div className="NL">
     <UL open={open}>
       <a href="/articles">Articles</a>
+      <a href="/createarticle">create article</a>
       <a href="/">Streamers</a>
       <a href="/">Live Schedule</a>
       <a href="/SignIn">Join Us!</a>    

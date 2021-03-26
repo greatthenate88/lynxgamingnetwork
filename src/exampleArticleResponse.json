@@ -1,0 +1,21 @@
+{
+    "articleTitle": "Test Article",
+    "author": {
+        "name": "Orson Welles",
+        "userID": "11116",
+        "about": "Lorem ipsum cola"
+    },
+    "creationDate":"1/1/1111",
+    "tags": "",
+    "thumbnail":"ddd",
+    
+    "articleContent": {
+        "articleComponents": [
+        "<ArticleHub/>",
+        "<ArticleHub/>"
+        ],
+        "comments": [
+
+        ]
+}
+}
