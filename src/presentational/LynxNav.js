@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import lynx from './images/lynx.png';
-import NavList from './NavList';
 import ThemeSelector from '../theme/ThemeSelector';
 import styled, { ThemeProvider } from "styled-components";
 import WebFont from 'webfontloader';
@@ -22,8 +21,7 @@ const Nav = styled.nav`
     transition:transform .25s;
     margin-top:auto;
     margin-bottom:auto;
-    margin-left:7rem;
-    
+    margin-left:7rem;    
 }
   .logo:hover{
   transform: scale(1.3);

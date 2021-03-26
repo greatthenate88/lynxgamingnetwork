@@ -1,12 +1,7 @@
 import { createGlobalStyle} from "styled-components";
 
+
 export const GlobalStyles = createGlobalStyle`
-  body {
-    background: ${({ theme }) => theme.colors.body};
-    color: ${({ theme }) => theme.colors.text};
-    font-family: ${({ theme }) => theme.font};
-    transition: all .1s linear;
-  }
 
   a {
     color: ${({ theme }) => theme.colors.link.text};
@@ -16,18 +11,23 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.colors.link.hover};
     transform:scale(1.05);
   }
-  .SCF{
-    background-color: ${({theme}) => theme.colors.foot.bc};
+  body {
+    background: ${({ theme }) => theme.colors.body};
+    color: ${({ theme }) => theme.colors.text};
+    font-family: ${({ theme }) => theme.font};
+    transition: all .1s linear;
+  }
+  h4{
+    padding-top:.8rem;
   }
   p{
     color: ${({ theme }) => theme.colors.link.text};
     font-size:1.1rem;
   }
-  .in-art-img{
-    float:inline-start;
-  }
   .active-article{
     border-right:1px solid lightgrey;
+    width:100%;
+    margin:auto;
   }
   .article-body{
     text-align:justify;
@@ -35,22 +35,70 @@ export const GlobalStyles = createGlobalStyle`
     padding-left:15%;
   }
   .about-author{
-    width:25%;
-    margin-left:10rem;
+    width:50%;
+    text-align:left;
+    line-height: 1.6;
+    color: #3a3a3a;
+    box-sizing: inherit;
+    vertical-align: baseline;
+    margin-left:15%;
   }
-  .tri-img-band{
+  .article-banner{
     margin-bottom:1rem;
     width:100%;
-    margin-left:25%;
-    margin-right:50%;
-    @media (max-width: 2000px) {
     margin-left:auto;
-    margin-right:auto;
+    align-content:center;
+  }
+  .article-sidebar{
+    padding:10px;
+    position:relative;
+    right:10vh;
+  }
+  .article-skeleton{
+    text-align:left;
+    .heading{
+
+      padding:1rem;
+    }
+    .content{
+
+      padding:1rem;
     }
   }
+  .author-img-container{
+    line-height: 1.6;
+    color: #3a3a3a;
+    vertical-align: middle;
+    float: left;
+    clear: right;
+    text-align: center;
+    margin:auto;
+  }
+  .author-img{
+    border-radius:50%;
+    height:4rem;
+    margin-right:1rem;
+  }
+  .author-info-container{
+    line-height: 1.6;
+    color: #3a3a3a;
+    vertical-align: baseline;
+    width: 100%;
+    display: flex;
+  }
+  .author-info{
+    line-height: 1.6;
+    color: #3a3a3a;
+    box-sizing: inherit;
+    vertical-align: baseline;
+    text-align: left;
+  }
+  .author-blurb{
+    text-align:left;
+    margin:auto;
+  }
   .AH{
-    margin-left:3rem;
-    margin-right:-3rem;
+    width:99%;
   }
   button {
     all:initial;
@@ -106,6 +154,12 @@ export const GlobalStyles = createGlobalStyle`
         border-radius:2px;
         color:#ff3f51;
     }
+  .in-art-img{
+    float:inline-start;
+  }
+    #lynxgamingnetwork {
+        margin-left: 6vh;
+}
     .reveal{
         all:initial;
         background-color:transparent;
@@ -117,4 +171,7 @@ export const GlobalStyles = createGlobalStyle`
     .reveal:hover{
         opacity:1;
     }
+  .SCF{
+    background-color: ${({theme}) => theme.colors.foot.bc};
+  }
 `;

@@ -4,6 +4,7 @@ import Articles from '../pages/Articles'
 import SignIn from '../pages/SignIn';
 import CreateArticle from '../pages/CreateArticle';
 
+import Schedule from '../pages/Schedule';
 
 
 
@@ -13,6 +14,11 @@ const routes = [
 	{
 		path: '/SignIn',
 		component: SignIn,
+		isPrivate: false,
+	},
+	{
+		path: '/schedule',
+		component: Schedule,
 		isPrivate: false,
 	},
 	{
