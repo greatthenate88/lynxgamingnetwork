@@ -26,7 +26,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   .active-article{
     border-right:1px solid lightgrey;
-    width:75%;
+    width:100%;
     margin:auto;
   }
   .article-body{
@@ -53,6 +53,17 @@ export const GlobalStyles = createGlobalStyle`
     padding:10px;
     position:relative;
     right:10vh;
+  }
+  .article-skeleton{
+    text-align:left;
+    .heading{
+
+      padding:1rem;
+    }
+    .content{
+
+      padding:1rem;
+    }
   }
   .author-img-container{
     line-height: 1.6;
@@ -85,6 +96,9 @@ export const GlobalStyles = createGlobalStyle`
   .author-blurb{
     text-align:left;
     margin:auto;
+  }
+  .AH{
+    width:99%;
   }
   button {
     all:initial;
