@@ -18,17 +18,14 @@ export const ArticleSkeleton = () => {
             </div>
             <button>add h1</button>
             <br/>
-            <button>add p</button>
+            
             <br/>
             <button>add div</button>
             <br/>
             <button>add img</button>
             <br/>
         </div>
-
     );
-
-
 }
 
 export default ArticleSkeleton
