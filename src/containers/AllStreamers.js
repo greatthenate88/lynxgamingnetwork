@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import VODCard from '../presentational/VODCard.js';
 import styled from 'styled-components';
 import ArticleCard from '../presentational/ArticleCard.js';
+import StreamerCard from '../presentational/StreamerCard.js';
+
 
 const Wrapping = styled.div`
     .container{
@@ -19,22 +21,17 @@ const Wrapping = styled.div`
     }
 `;
 
-export const StreamTable = (props) => {
+export const AllStreamers = (props) => {
     return (
       <Wrapping>
         <Container>
             <Row noGutters='true'>
-                <Col><VODCard/></Col>
-                <Col><VODCard/></Col>
-                <Col><VODCard/></Col>
-            </Row>
-            <Row noGutters='true'>
-                <Col><ArticleCard/></Col>
-                <Col><ArticleCard/></Col>
-                <Col><ArticleCard/></Col>
+                <Col><StreamerCard/></Col>
+                <Col><StreamerCard/></Col>
+                <Col><StreamerCard/></Col>
             </Row>
         </Container>
       </Wrapping>
     );
 }
-export default StreamTable
+export default AllStreamers

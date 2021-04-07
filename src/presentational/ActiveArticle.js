@@ -5,6 +5,7 @@ import skullofguldan from './images/skullofguldan.png';
 import AboutAuthor from './AboutAuthor';
 import ArticleHeader from './ArticleHeader';
 import ListicleItem from './ListicleItem';
+import { InArtVideo } from './InArtVideo';
 
 
 export const ActiveArticle = (props) => {
@@ -13,6 +14,7 @@ export const ActiveArticle = (props) => {
     <div className="active-article">
         <ArticleHeader/>
          <div className="article-body">
+             <InArtVideo/>
             <ListicleItem/>
             <h3>
                 1. Demon Hunter - Illidari Strike    

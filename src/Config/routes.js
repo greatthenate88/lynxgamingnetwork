@@ -3,7 +3,7 @@ import Home from '../pages/Home'
 import Articles from '../pages/Articles'
 import SignIn from '../pages/SignIn';
 import CreateArticle from '../pages/CreateArticle';
-
+import Streamers from '../pages/Streamers';
 import Schedule from '../pages/Schedule';
 
 
@@ -24,6 +24,11 @@ const routes = [
 	{
 		path: '/articles',
 		component: Articles,
+		isPrivate: false,
+	},
+	{
+		path: '/streamers',
+		component: Streamers,
 		isPrivate: false,
 	},
 	{

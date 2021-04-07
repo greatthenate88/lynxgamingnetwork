@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
 import ActiveArticle from '../presentational/ActiveArticle';
 import ArticleCard from '../presentational/ArticleCard';
-import StreamerCard from '../presentational/StreamerCard';
+import VODCard from '../presentational/VODCard';
 
 
 export const ArticleHub = (props) => {
@@ -21,7 +21,7 @@ export const ArticleHub = (props) => {
                 <div className="article-sidebar">
                     <ArticleCard/>
                     <br/>
-                    <StreamerCard/>
+                    <VODCard/>
                 </div>
             </Col>
         </Row>

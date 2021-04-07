@@ -38,7 +38,6 @@ export const GlobalStyles = createGlobalStyle`
     width:50%;
     text-align:left;
     line-height: 1.6;
-    color: #3a3a3a;
     box-sizing: inherit;
     vertical-align: baseline;
     margin-left:15%;
@@ -223,4 +222,16 @@ export const GlobalStyles = createGlobalStyle`
   .SCF{
     background-color: ${({theme}) => theme.colors.foot.bc};
   }
+.streamer-profile-card{
+  border-radius:5px;
+  border-width:.1rem;
+  border-color:${({theme}) => theme.colors.card.border};
+  border-style:solid;
+  padding:.2rem;
+  background:${({theme}) => theme.colors.card.background};
+  color:${({theme}) => theme.colors.card.text};
+}
+
+
+
 `;
