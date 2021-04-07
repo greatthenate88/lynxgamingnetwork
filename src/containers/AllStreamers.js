@@ -1,9 +1,7 @@
 import React from 'react';
 import {Row, Col, Container, Card, Carousel} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
-import VODCard from '../presentational/VODCard.js';
 import styled from 'styled-components';
-import ArticleCard from '../presentational/ArticleCard.js';
 import StreamerCard from '../presentational/StreamerCard.js';
 
 

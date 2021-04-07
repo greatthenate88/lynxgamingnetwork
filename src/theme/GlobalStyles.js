@@ -223,7 +223,8 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({theme}) => theme.colors.foot.bc};
   }
 .streamer-profile-card{
-  width:20rem;
+  width:18rem;
+  height:23rem;
   border-radius:5px;
   border-width:.1rem;
   border-color:${({theme}) => theme.colors.card.border};
