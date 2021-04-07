@@ -223,15 +223,23 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({theme}) => theme.colors.foot.bc};
   }
 .streamer-profile-card{
+  width:20rem;
   border-radius:5px;
   border-width:.1rem;
   border-color:${({theme}) => theme.colors.card.border};
   border-style:solid;
-  padding:.2rem;
   background:${({theme}) => theme.colors.card.background};
   color:${({theme}) => theme.colors.card.text};
+  .card-title{
+    text-align:left;
+  }
+  .streamer-link{
+    color:${({theme}) => theme.colors.card.name};
+    font-weight:bold;
+  }
+  .streamer-link:hover{
+    text-decoration:underline;
+  }
 }
-
-
 
 `;

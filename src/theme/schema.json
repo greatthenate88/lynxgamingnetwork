@@ -27,7 +27,7 @@
             "background":"#f9fffe",
             "border":"#c4c4c4",
             "text":"#000a1e",
-            "name":"#03c6a3"
+            "name":"#00231e"
           },
           "formbox":{
             "bg":"#fbfffe",
@@ -36,6 +36,7 @@
         },
         "font": "Ubuntu"
       },
+
       "dark" : {
         "id": "T_007",
         "name": "Dark",
@@ -60,7 +61,7 @@
             "btntext":"#001e17"  
           },
           "card":{
-            "background":"#c4c4c4",
+            "background":"#001915",
             "border":"#f9fffe",
             "text":"#03c6a3",
             "name":"#f9fffe"
