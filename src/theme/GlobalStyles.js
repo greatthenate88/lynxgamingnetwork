@@ -234,6 +234,12 @@ export const GlobalStyles = createGlobalStyle`
   .card-title{
     text-align:left;
   }
+  .streamer-card-image{
+    border-radius:50%;
+    height:55%;
+    width:75%;
+    margin-top:.3rem;
+  }
   .streamer-link{
     color:${({theme}) => theme.colors.card.name};
     font-weight:bold;
@@ -241,6 +247,7 @@ export const GlobalStyles = createGlobalStyle`
   .streamer-link:hover{
     text-decoration:underline;
   }
+
 }
 
 `;

@@ -42,7 +42,7 @@ const SC = styled.a`
     padding-right:.5rem;
   }
   .not-a-wrapper:hover{
-    transform:scale(1.05);
+    transform:scale(1.02);
     transition: transform .2s ease-in-out;
   }
 `;

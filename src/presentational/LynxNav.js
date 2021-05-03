@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import lynx from './images/lynx.png';
+import lynxlogo from './images/lynxlogo.svg';
 import ThemeSelector from '../theme/ThemeSelector';
 import styled, { ThemeProvider } from "styled-components";
 import WebFont from 'webfontloader';
@@ -22,12 +22,14 @@ const Nav = styled.nav`
     transition:transform .25s;
     margin-top:auto;
     margin-bottom:auto;
-    margin-left:7rem;    
+    margin-left:7rem;   
 }
   .logo:hover{
   transform: scale(1.3);
 }
-
+  .lynx{
+    color:blue;
+  }
   .NL{
     margin-top:auto;
     margin-bottom:auto;
@@ -60,7 +62,7 @@ const LynxNav = () => {
       <Nav>
         <div className="logo">
           <LynxLogo href='/'>
-          <img className="lynx" src={lynx} alt="temp lynx logo" height='103px' width='103px'/>
+          <img className="lynx" src={lynxlogo} alt="temp lynx logo" height='103px' width='103px'/>
           </LynxLogo>
         </div>
         <ThemeSelector setter={setSelectedTheme} />

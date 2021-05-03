@@ -42,18 +42,18 @@
         "name": "Dark",
         "colors": {
           "body": "#000a1e",
-          "text": "#03c6a3",
+          "text": "#55c1ad",
           "button": {
-            "text": "#03c6a3",
+            "text": "#55c1ad",
             "background": "#0d47a1"
           },
           "link": {
-            "text": "#03c6a3",
+            "text": "#55c1ad",
             "opacity": 0.8,
             "hover":"#00cc9f"
           },
           "foot":{
-            "bc":"black"
+            "bc":"#000707"
           },
           "modal":{
             "bordercolor":"#b3dbd4",
@@ -61,9 +61,9 @@
             "btntext":"#001e17"  
           },
           "card":{
-            "background":"#001010",
+            "background":"#000707",
             "border":"#f9fffe",
-            "text":"#03c6a3",
+            "text":"#55c1ad",
             "name":"#f9fffe"
           },
           "formbox":{

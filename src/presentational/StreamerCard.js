@@ -1,13 +1,13 @@
 import React from 'react';
 import {Card} from 'react-bootstrap';
-import thumbnail from './images/thumbnail.jpg';
+import fu from './images/fu.jpg';
 
 
 export const StreamerCard = (props) => {
     return(
     <Card bsPrefix="streamer-profile-card">
-        <Card.Img variant="top" alt="streamer-img" src={thumbnail}>
-        </Card.Img>
+        <img className="streamer-card-image" variant="top" alt="streamer-img" src={fu}>
+        </img>
         <Card.Body>
             <Card.Title><a className="streamer-link" href="/streamers">Streamer Name</a></Card.Title>
             <p className="author-blurb">This is what the streamer does/what their twitch or yt profile description is</p>

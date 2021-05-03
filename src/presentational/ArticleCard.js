@@ -4,13 +4,16 @@ import artthumbnail from './images/artthumbnail.jpg';
 
 const AC = styled.a`
     width:100%;
-    border-radius:2px;
     padding: .1rem;
-    border-color:black;
     margin-left:auto;
     margin-right:auto;
     margin-top:1rem;
-
+  .not-a-wrapper{
+    border-style:solid;
+    border-width:.1rem;
+    border-color:#cecece;
+    border-radius:.1rem;
+  }
   .UN{
     margin:auto;
   }
@@ -24,8 +27,6 @@ const AC = styled.a`
   }
   img{
     width:100%;
-    border:1px solid #0075b5;
-    border-bottom:none;
   }
 
   footer{
@@ -44,7 +45,7 @@ const AC = styled.a`
     padding-right:.5rem;
   }
   .not-a-wrapper:hover{
-    transform:scale(1.05);
+    transform:scale(1.02);
     transition: transform .2s ease-in-out;
   }
 `;
