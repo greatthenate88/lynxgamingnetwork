@@ -4,6 +4,7 @@ import artthumbnail from './images/artthumbnail.jpg';
 
 const AC = styled.a`
     width:100%;
+    border-radius:2px;
     padding: .1rem;
     margin-left:auto;
     margin-right:auto;
@@ -12,7 +13,7 @@ const AC = styled.a`
     border-style:solid;
     border-width:.1rem;
     border-color:#cecece;
-    border-radius:.1rem;
+    border-radius:.5rem;
   }
   .UN{
     margin:auto;
@@ -27,15 +28,9 @@ const AC = styled.a`
   }
   img{
     width:100%;
+    border-radius:.4rem;
   }
 
-  footer{
-    border-width:1px;
-    border-style:solid;
-    border-color:#0075b5;
-    border-top:none;
-    text-align:center;
-  }
   .title{
     text-align:left;
     padding-left:.5rem;

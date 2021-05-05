@@ -19,7 +19,7 @@ const UL = styled.ul`
     display: ${({open}) => open ? 'flex' : 'none'};
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     opacity:.9;
-    position:fixed;
+    position:absolute;
     top: 0;
     right: 0;
     height: 650px;

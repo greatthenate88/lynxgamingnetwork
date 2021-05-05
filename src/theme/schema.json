@@ -7,8 +7,8 @@
           "body": "#FFFFFF",
           "text": "#000000",
           "button": {
-            "text": "#FFFFFF",
-            "background": "#000000"
+            "text": "#f9fffd",
+            "background": "#000a1e"
           },
           "link": {
             "text":"#242d3a",
@@ -16,15 +16,15 @@
             "hover":"#002151"
           },
           "foot":{
-            "bc":"white"
+            "bc":"#f9fffd"
           },
           "modal":{
             "bordercolor":"#cecece",
-            "btnbg":"#001e17",
+            "btnbg":"#000a1e",
             "btntext":"#f9fffd"
           },
           "card":{
-            "background":"#f9fffe",
+            "background":"#f9fffd",
             "border":"#c4c4c4",
             "text":"#000a1e",
             "name":"#00231e"
@@ -53,15 +53,15 @@
             "hover":"#00cc9f"
           },
           "foot":{
-            "bc":"#000707"
+            "bc":"#09001e"
           },
           "modal":{
             "bordercolor":"#b3dbd4",
             "btnbg":"#f9fffd",
-            "btntext":"#001e17"  
+            "btntext":"#000a1e"  
           },
           "card":{
-            "background":"#000707",
+            "background":"#7280a3",
             "border":"#f9fffe",
             "text":"#55c1ad",
             "name":"#f9fffe"

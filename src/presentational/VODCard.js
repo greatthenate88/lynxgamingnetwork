@@ -10,7 +10,12 @@ const SC = styled.a`
     margin-left:auto;
     margin-right:auto;
     margin-top:1rem;
-
+  .not-a-wrapper{
+    border-style:solid;
+    border-width:.1rem;
+    border-color:#cecece;
+    border-radius:.5rem;
+  }
   .UN{
     margin:auto;
   }
@@ -24,15 +29,9 @@ const SC = styled.a`
   }
   img{
     width:100%;
-    border:1px solid #0075b5;
+    border-radius:.4rem;
   }
 
-  .SCF{
-    border-width:1px;
-    border-style:solid;
-    border-color:#0075b5;
-    border-top:none;
-  }
   .title{
     text-align:left;
     padding-left:.5rem;

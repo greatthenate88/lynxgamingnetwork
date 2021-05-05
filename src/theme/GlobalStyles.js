@@ -221,6 +221,14 @@ export const GlobalStyles = createGlobalStyle`
 }
   .SCF{
     background-color: ${({theme}) => theme.colors.foot.bc};
+    border-radius:2px;
+    border-width:.1px;
+    border-color:#cecece;
+    border-style:solid;
+    border-bottom:none;
+    border-left:none;
+    border-right:none;
+    padding:.1rem;
   }
 .streamer-profile-card{
   width:18rem;

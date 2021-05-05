@@ -28,6 +28,12 @@ export const AllStreamers = (props) => {
                 <Col><StreamerCard/></Col>
                 <Col><StreamerCard/></Col>
             </Row>
+            <br/>
+            <Row noGutters='true'>
+                <Col><StreamerCard/></Col>
+                <Col><StreamerCard/></Col>
+                <Col><StreamerCard/></Col>
+            </Row>
         </Container>
       </Wrapping>
     );

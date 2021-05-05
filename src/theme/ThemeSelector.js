@@ -4,7 +4,7 @@ import _ from 'lodash';
 import {useTheme} from './useTheme';
 import { getFromLS } from '../utils/storage';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAdjust, faClone, faPaw } from "@fortawesome/free-solid-svg-icons";
+import { faRainbow} from "@fortawesome/free-solid-svg-icons";
 
 const ThemedButton = styled.button`
     all:initial;
@@ -73,7 +73,7 @@ export default (props) => {
                     style={{backgroundColor: `${data[_.camelCase(props.theme.name)].colors.button.background}`, 
                     color: `${data[_.camelCase(props.theme.name)].colors.button.text}`,
                     fontFamily: `${data[_.camelCase(props.theme.name)].font}`}}>
-                    <FontAwesomeIcon icon={faClone} />
+                    <FontAwesomeIcon icon={faRainbow} />
                 </ThemedButton>
             </Wrapper>
         )
